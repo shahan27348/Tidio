@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet">
+    <!-- Css link -->
+    <link rel="stylesheet" href="tidionext.css">
+    <title>Tidio / Panel</title>
+</head>
+
+<body>
+    <!-- Header div section start -->
+    <section class="header">
+        <header class="main-head">
+            <nav class="navbar sticky-top navbar-expand-lg">
+                <div class="container">
+                    <div class="paragraph">
+                        <p id="para1">Install Tidio now to enable chatbots, Lyro, and engage with visitors. Need
+                            assistance?<span><a id="talk" href="#">Talk to us</a></span></p>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn install">Install Tidio chat</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- Header section end -->
+    <!-- main section start -->
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 color">
+                    <div class="row">
+                        <div class="icons-7">
+                            <ul class="icon-list">
+                                <li class="item"><a href="#" class="icon-link active1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" class="css-0 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="#647491"
+                                                d="M19 3H4.99c-1.11 0-1.98.9-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19zm-3-5h-2V7h-4v3H8l4 4z">
+                                            </path>
+                                        </svg></a></li>
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" class="css-0 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="#647491"></path>
+                                        </svg></a></li>
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" class="css-0 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <path fill-rule="evenodd" fill="#647491"
+                                                d="M5.797 3.4a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4m12.403 0a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4m-1.912 11.992a4.402 4.402 0 0 1-8.576 0c-.124-.538.336-.992.888-.992h6.8c.552 0 1.012.454.888.992M8.9 12.799a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4m7.902-1.7a1.7 1.7 0 1 1-3.4 0 1.7 1.7 0 0 1 3.4 0M21.6 9.902l-.1-1.4c0-2.1-1.6-3.7-3.7-3.8H6.2c-2.1.1-3.7 1.7-3.7 3.8l-.1 1.4c-1.254 0-2.321 1.023-2.396 2.351L0 12.302v1.8c0 1.3 1.1 2.4 2.4 2.5h.1v2.2c.1 2.1 1.7 3.7 3.8 3.7h11.4c2.1 0 3.7-1.6 3.8-3.7v-2.2h.1c1.3-.1 2.4-1.2 2.4-2.5v-1.8c-.1-1.3-1.1-2.4-2.4-2.4m-9.6 10.8h5.7c1.1 0 2-.9 2-2v-10.1c0-1.1-.9-2-2-2H6.3c-1.1 0-2 .9-2 2v10.1c0 1.1.9 2 2 2H12">
+                                            </path>
+                                        </svg></a></li>
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" class="css-0 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;" fill="#647491">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path
+                                                d="m21.6 10.2-.1-1.4c0-2.1-1.6-3.7-3.7-3.8H6.3c-2 .1-3.7 1.7-3.7 3.8v1.4h-.2c-1.3 0-2.4 1.1-2.4 2.5v1.7c0 1.3 1.1 2.4 2.4 2.5h1.8v-8c0-1.1.9-2 2-2h11.5c1.1 0 2 .9 2 2V19c0 1.1-.9 2-2 2h-3.8c-.3-.8-1.1-1.2-1.9-1.2-1.2 0-2.1.9-2.1 2.1 0 1.1.9 2.1 2.1 2.1.8 0 1.6-.5 1.9-1.2h3.8c2.1 0 3.7-1.6 3.8-3.7v-2.4h.1c1.3 0 2.4-1.1 2.4-2.4v-1.7c-.1-1.3-1.1-2.4-2.4-2.4">
+                                            </path>
+                                            <circle cx="18.2" cy="2" r="1.7"></circle>
+                                            <circle cx="5.8" cy="2" r="1.7"></circle>
+                                            <path
+                                                d="m12.2 16.5 2 1.5 2-1.5.4-.2c.3-.2.4-.7.1-1-.2-.3-.7-.4-1-.1l-1.5 1.1-2-1.5-2 1.5-1.5-1.1c-.3-.2-.7-.2-1 .1-.2.3-.2.7.1 1l2.3 1.7z">
+                                            </path>
+                                            <circle cx="8.9" cy="11.4" r="1.7"></circle>
+                                            <circle cx="15.1" cy="11.4" r="1.7"></circle>
+                                        </svg></a></li>
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" class="svg-icon" fill="#647491">
+                                            <g transform="translate(2.000000, 3.000000)">
+                                                <path
+                                                    d="M18.421,0.99 L5.788,0.99 C4.91798902,0.992757388 4.21478747,1.69998747 4.217,2.57 L4.209,12.04 C4.2106489,12.9115359 4.91646537,13.6177993 5.788,13.62 L18.421,13.62 C19.2925346,13.6177993 19.9983511,12.9115359 20,12.04 L20,2.57 C19.9983511,1.69846415 19.2925346,0.992200683 18.421,0.99 Z M18.421,4.15 L12.105,8.1 L5.788,4.15 L5.788,2.57 L12.105,6.52 L18.421,2.57 L18.421,4.15 Z M5.788,15.73 C3.75332667,15.7244931 2.10619578,14.0746796 2.104,12.04 L2.11,4.19 L1.71,4.19 C0.766831103,4.19220303 0.00309926294,4.95682917 0.00199530115,5.9 L0.00199530115,16.12 C0.000936380904,16.5734988 0.180480243,17.0087588 0.50096548,17.3296193 C0.821450718,17.6504798 1.25650031,17.8305329 1.71,17.8300012 L15.341,17.8300012 C15.7944997,17.8305329 16.2295493,17.6504798 16.5500345,17.3296193 C16.8705198,17.0087588 17.0500636,16.5734988 17.0490047,16.12 L17.0490047,15.73 L5.788,15.73 L5.788,15.73 Z">
+                                                </path>
+                                            </g>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </svg></a></li>
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" class="css-0 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;" fill="#647491">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path
+                                                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3m-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3m0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5m8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5">
+                                            </path>
+                                        </svg></a></li>
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" class="svg-icon css-0 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;" fill="#647491">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path d="m3.5 18.49 6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z">
+                                            </path>
+                                        </svg></a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="icon-3">
+                            <ul class="icon-list">
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" class="css-0 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="#647491"
+                                                d="M4 8h4V4H4zm6 12h4v-4h-4zm-6 0h4v-4H4zm0-6h4v-4H4zm6 0h4v-4h-4zm6-10v4h4V4zm-6 4h4V4h-4zm6 6h4v-4h-4zm0 6h4v-4h-4z">
+                                            </path>
+                                        </svg></a></li>
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="20" height="20" viewBox="0 0 24 24" class="svg-icon css-0 e11k6mr30"
+                                            style="min-width: 20px; min-height: 20px;">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="#647491"
+                                                d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.49.49 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5">
+                                            </path>
+                                        </svg></a></li>
+                                <li class="item"><a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="22" height="22" viewBox="0 0 32 32" class="css-0 e11k6mr30"
+                                            style="min-width: 22px; min-height: 22px;">
+                                            <g fill="none">
+                                                <path fill="#135EEB"
+                                                    d="M20.63 0a11.34 11.34 0 0 0-11.2 9.42h.003A11.394 11.394 0 0 0 0 20.643V32h11.384a11.37 11.37 0 0 0 11.18-9.25h-2.5H32V11.358C31.985 5.085 26.901.007 20.63 0M9.263 11.394v.003z">
+                                                </path>
+                                                <path fill="#0A60EA"
+                                                    d="M11.408 9.25a12.5 12.5 0 0 0-1.975.17q-.162.978-.17 1.97a11.363 11.363 0 0 0 11.37 11.36h1.94c.14-.706.208-1.424.205-2.144a11.34 11.34 0 0 0-11.37-11.357z">
+                                                </path>
+                                                <path fill="#15C2FF"
+                                                    d="M20.654 22.75A11.37 11.37 0 0 1 9.263 11.398c.004-.66.061-1.32.17-1.97A11.39 11.39 0 0 0 0 20.642V32h11.384a11.37 11.37 0 0 0 11.18-9.25z">
+                                                </path>
+                                                <path fill="#2C82FF"
+                                                    d="M20.63 0a11.34 11.34 0 0 0-11.2 9.42 12.5 12.5 0 0 1 1.974-.17 11.357 11.357 0 0 1 11.166 13.5H32V11.358C31.985 5.085 26.901.007 20.63 0">
+                                                </path>
+                                            </g>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 new-col">
+                    <div class="my-open">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                            class="css-0 e11k6mr30" style="min-width: 22px; min-height: 22px;">
+                            <path fill-rule="evenodd"
+                                d="M4 5v1.5h7V5zM11 19v-1.5H4V19zM4 13v1.5h7V13zM4 9v1.5h7V9zM15 8.94l.94-.94 4 4-4 4-.94-.94L18.054 12z"
+                                clip-rule="evenodd" fill="grey"></path>
+                        </svg>
+                        <h1 class="h1">📬&nbsp;&nbsp; My open</h1>
+                        <img style="position: relative; top: 2.4rem;"
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE4NSIgdmlld0JveD0iMCAwIDI4MCAxODUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIKICAgICAgICAgIGQ9Ik0wIDE2QzAgNy4xNjM0NCA3LjE2MzQ0IDAgMTYgMEMyNC44MzY2IDAgMzIgNy4xNjM0NCAzMiAxNkMzMiAyNC44MzY2IDI0LjgzNjYgMzIgMTYgMzJDNy4xNjM0NCAzMiAwIDI0LjgzNjYgMCAxNlpNMjUyIDYuMjVDMjUyIDMuMzUwNTEgMjU0LjM1MSAxIDI1Ny4yNSAxSDI3NC43NUMyNzcuNjUgMSAyODAgMy4zNTA1MSAyODAgNi4yNUMyODAgOS4xNDk1IDI3Ny42NSAxMS41IDI3NC43NSAxMS41SDI1Ny4yNUMyNTQuMzUxIDExLjUgMjUyIDkuMTQ5NSAyNTIgNi4yNVpNNDguMTI1IDFDNDQuNzQyMyAxIDQyIDMuNzQyMjYgNDIgNy4xMjVDNDIgMTAuNTA3NyA0NC43NDIzIDEzLjI1IDQ4LjEyNSAxMy4yNUgyMzMuODc1QzIzNy4yNTggMTMuMjUgMjQwIDEwLjUwNzcgMjQwIDcuMTI1QzI0MCAzLjc0MjI2IDIzNy4yNTggMSAyMzMuODc1IDFINDguMTI1Wk00MiAyNS4yNUM0MiAyMi4zNTA1IDQ0LjM1MDUgMjAgNDcuMjUgMjBIOTcuNzVDMTAwLjY0OSAyMCAxMDMgMjIuMzUwNSAxMDMgMjUuMjVDMTAzIDI4LjE0OTUgMTAwLjY0OSAzMC41IDk3Ljc1IDMwLjVINDcuMjVDNDQuMzUwNSAzMC41IDQyIDI4LjE0OTUgNDIgMjUuMjVaTTYuMTI1IDQ0QzIuNzQyMjYgNDQgMCA0Ni43NDIzIDAgNTAuMTI1QzAgNTMuNTA3NyAyLjc0MjI2IDU2LjI1IDYuMTI1MDEgNTYuMjVIMjMzLjg3NUMyMzcuMjU4IDU2LjI1IDI0MCA1My41MDc3IDI0MCA1MC4xMjVDMjQwIDQ2Ljc0MjMgMjM3LjI1OCA0NCAyMzMuODc1IDQ0SDYuMTI1Wk0wIDY3LjYyNUMwIDY0LjI0MjMgMi43NDIyNiA2MS41IDYuMTI1IDYxLjVIMjMzLjg3NUMyMzcuMjU4IDYxLjUgMjQwIDY0LjI0MjMgMjQwIDY3LjYyNUMyNDAgNzEuMDA3NyAyMzcuMjU4IDczLjc1IDIzMy44NzUgNzMuNzVINi4xMjUwMUMyLjc0MjI2IDczLjc1IDAgNzEuMDA3NyAwIDY3LjYyNVpNMCAxMjdDMCAxMTguMTYzIDcuMTYzNDQgMTExIDE2IDExMUMyNC44MzY2IDExMSAzMiAxMTguMTYzIDMyIDEyN0MzMiAxMzUuODM3IDI0LjgzNjYgMTQzIDE2IDE0M0M3LjE2MzQ0IDE0MyAwIDEzNS44MzcgMCAxMjdaTTI1MiAxMTcuMjVDMjUyIDExNC4zNTEgMjU0LjM1MSAxMTIgMjU3LjI1IDExMkgyNzQuNzVDMjc3LjY1IDExMiAyODAgMTE0LjM1MSAyODAgMTE3LjI1QzI4MCAxMjAuMTQ5IDI3Ny42NSAxMjIuNSAyNzQuNzUgMTIyLjVIMjU3LjI1QzI1NC4zNTEgMTIyLjUgMjUyIDEyMC4xNDkgMjUyIDExNy4yNVpNNDguMTI1IDExMkM0NC43NDIzIDExMiA0MiAxMTQuNzQyIDQyIDExOC4xMjVDNDIgMTIxLjUwOCA0NC43NDIzIDEyNC4yNSA0OC4xMjUgMTI0LjI1SDIzMy44NzVDMjM3LjI1OCAxMjQuMjUgMjQwIDEyMS41MDggMjQwIDExOC4xMjVDMjQwIDExNC43NDIgMjM3LjI1OCAxMTIgMjMzLjg3NSAxMTJINDguMTI1Wk00MiAxMzYuMjVDNDIgMTMzLjM1MSA0NC4zNTA1IDEzMSA0Ny4yNSAxMzFIOTcuNzVDMTAwLjY0OSAxMzEgMTAzIDEzMy4zNTEgMTAzIDEzNi4yNUMxMDMgMTM5LjE0OSAxMDAuNjQ5IDE0MS41IDk3Ljc1IDE0MS41SDQ3LjI1QzQ0LjM1MDUgMTQxLjUgNDIgMTM5LjE0OSA0MiAxMzYuMjVaTTYuMTI1IDE1NUMyLjc0MjI2IDE1NSAwIDE1Ny43NDIgMCAxNjEuMTI1QzAgMTY0LjUwOCAyLjc0MjI2IDE2Ny4yNSA2LjEyNTAxIDE2Ny4yNUgyMzMuODc1QzIzNy4yNTggMTY3LjI1IDI0MCAxNjQuNTA4IDI0MCAxNjEuMTI1QzI0MCAxNTcuNzQyIDIzNy4yNTggMTU1IDIzMy44NzUgMTU1SDYuMTI1Wk0wIDE3OC42MjVDMCAxNzUuMjQyIDIuNzQyMjYgMTcyLjUgNi4xMjUgMTcyLjVIMjMzLjg3NUMyMzcuMjU4IDE3Mi41IDI0MCAxNzUuMjQyIDI0MCAxNzguNjI1QzI0MCAxODIuMDA4IDIzNy4yNTggMTg0Ljc1IDIzMy44NzUgMTg0Ljc1SDYuMTI1MDFDMi43NDIyNiAxODQuNzUgMCAxODIuMDA4IDAgMTc4LjYyNVoiCiAgICAgICAgICBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMTE1MF8xMDAzMDEpIi8+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTE1MF8xMDAzMDEiIHgxPSIxNDAiIHkxPSIxODUiIHgyPSIxNDAiIHkyPSIwLjk5OTk5OCIKICAgICAgICAgICAgICAgICAgICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRUVGMUY2IiBzdG9wLW9wYWNpdHk9IjAuMDUiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwLjk4OTc3IiBzdG9wLWNvbG9yPSIjRURGMEY1IiBzdG9wLW9wYWNpdHk9IjAuNzUiLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgo8L3N2Zz4K"
+                            alt="">
+                        <p class="p">You have no conversations assigned to you at the moment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-9 bann">
+                    <header class="main-head-banner">
+                        <nav class="navbar sticky-top navbar-expand-lg">
+                            <div class="images" style="position: relative; right: -37rem; ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    style="margin-right: 8px;" class="css-0 e11k6mr30"
+                                    style="min-width: 22px; min-height: 22px;">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="grey"
+                                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    class="css-0 e11k6mr30" style="min-width: 22px; min-height: 22px;">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="grey"
+                                        d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95M12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53A6.95 6.95 0 0 1 12 19">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="vertical-divider"
+                                style="border-left: 1px solid rgb(210, 208, 208); height: 30px; position: relative;right: -38rem;">
+                            </div>
+                            <div class="text">
+                                <h5><span
+                                        style="border: 3.5px solid #1532f0; border-radius: 70%; padding: 3px;padding-left: 7.5px; ">5
+                                    </span>&nbsp;<span style="font-weight: 700;">days left</span> in your full-featured
+                                    trial
+                                </h5>
+                            </div>
+
+                            <div class="button">
+                                <button type="button" class="btn instal">Upgrade</button>
+                            </div>
+                            <div class="img open-button" onclick="openForm()">
+                                <svg style="background: rgb(241, 241, 241); border-radius: 50%;"
+                                    xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                    style="background-color: grey; border-radius: 50%;" viewBox="0 0 24 24"
+                                    fill="onBackgroundDarkHover" class="css-1fwp0go e11k6mr30"
+                                    style="min-width: 15px; min-height: 15px;">
+                                    <path style="fill: rgb(185, 184, 184);"
+                                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4">
+                                    </path>
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                </svg>
+
+                            </div>
+
+
+                        </nav>
+
+
+                        <div class="chat-popup" id="myForm">
+                            <form action="/action_page.php" class="form-container">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" height="16"
+                                            viewBox="0 0 24 24" width="24" class="css-p6of7y e1brdobh2">
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                            <path fill="#8796AF"
+                                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z">
+                                            </path>
+                                        </svg>
+                                        EN
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+
+                                <button type="button" class="btn cancel" onclick="closeForm()"><i
+                                        class="fa-solid fa-xmark"></i></button>
+                                <div class="avtar"><img
+                                        style="border-radius: 50%; width: 100px;position: relative; left: 5.5rem;bottom: 1rem;"
+                                        src="1.jpg" alt="">
+                                    <h1 style="color: #fff;font-size: 19px;text-align: center;">Muhammad Shahan</h1>
+                                    <p style="color: #fff; font-size: 14px;text-align: center;">Trial Account (4 days
+                                        left)</p>
+                                </div>
+                                <div class="drop"
+                                    style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="subdued" class="css-2eu3wi e11k6mr30"
+                                                style="min-width: 20px; min-height: 20px;">
+                                                <path fill="#8796AF"
+                                                    d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 0 0 2 2m6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1z">
+                                                </path>
+                                            </svg>
+                                            Online&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24" fill="subdued" class="css-2eu3wi e11k6mr30"
+                                                style="min-width: 20px; min-height: 20px;">
+                                                <path fill="#8796AF"
+                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39">
+                                                </path>
+                                            </svg>
+                                            127.0.0.1/tidio.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="link">
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="success" class="css-p10mh e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <path fill="#58B958"
+                                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4">
+                                            </path>
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                        </svg>&nbsp;&nbsp;&nbsp;Muhammad Shahan</a>
+                                    <a href="#" style="margin-right: 3rem;"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="#8796AF"
+                                            class="css-2eu3wi e11k6mr30" style="min-width: 24px; min-height: 24px;">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"></path>
+                                        </svg>&nbsp;&nbsp;&nbsp;Add an operator</a>
+                                </div>
+                                <div class="icons" style="display: flex;justify-content: space-around;align-items: center;">
+                                    <div class="first-icon"
+                                        style=" display: flex;flex-direction: column; justify-content: center;align-items: center; margin-inline-start: 1rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24" fill="subdued" class="css-2eu3wi e11k6mr30"
+                                            style="min-width: 32px; min-height: 32px;">
+                                            <path fill="#8796AF"
+                                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4">
+                                            </path>
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                        </svg>
+                                        <p style="color: #fff;font-size: 14px; margin-top: 8px;">Profile</p>
+                                    </div>
+                                    <div class="first-icon"
+                                        style=" display: flex;flex-direction: column; justify-content: center;align-items: center; margin-inline-start: -1.5rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24" fill="subdued" class="css-2eu3wi e11k6mr30"
+                                            style="min-width: 32px; min-height: 32px;">
+                                            <path fill="#8796AF"
+                                                d="M10.09 15.59 11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67zM19 3H5a2 2 0 0 0-2 2v4h2V5h14v14H5v-4H3v4a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2">
+                                            </path>
+                                        </svg>
+                                        <p style="color: #fff;font-size: 14px; margin-top: 8px;">Logout</p>
+
+                                    </div>
+                                    <div class="first-icon"
+                                        style=" display: flex;flex-direction: column; justify-content: center;align-items: center;margin-inline-start: -1.5rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24" fill="subdued" class="css-2eu3wi e11k6mr30"
+                                            style="min-width: 32px; min-height: 32px;">
+                                            <path fill="#8796AF"
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m7.46 7.12-2.78 1.15a4.98 4.98 0 0 0-2.95-2.94l1.15-2.78c2.1.8 3.77 2.47 4.58 4.57M12 15c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3M9.13 4.54l1.17 2.78a5 5 0 0 0-2.98 2.97L4.54 9.13a7.98 7.98 0 0 1 4.59-4.59M4.54 14.87l2.78-1.15a4.97 4.97 0 0 0 2.97 2.96l-1.17 2.78a8 8 0 0 1-4.58-4.59m10.34 4.59-1.15-2.78a4.98 4.98 0 0 0 2.95-2.97l2.78 1.17a8 8 0 0 1-4.58 4.58">
+                                            </path>
+                                        </svg>
+                                        <p style="color: #fff; font-size: 14px; margin-top: 8px;">Support</p>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <script>
+                            function openForm() {
+                                document.getElementById("myForm").style.display = "block";
+                            }
+
+                            function closeForm() {
+                                document.getElementById("myForm").style.display = "none";
+                            }
+                        </script>
+
+                    </header>
+                    <section class="hero">
+                        <div class="container">
+                            <div class="row">
+                                <h1>No active conversations</h1>
+                                <h5>Before starting a real conversation with your visitors, simulate <br> one to see how
+                                    things work!</h5>
+                                <div class="button">
+                                    <button type="button" class="btn instal">Simulate a conversation</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 style="position: relative; top: 13.4rem;">You can also integrate Tidio with other
+                                    apps
+                                    to keep everything in one place!</h5>
+                                <div class="boxes"
+                                    style="position: relative; top: 14.5rem; left: 5.5rem; display: flex; justify-content: start; align-items: center;">
+                                    <div class="box1" style="background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="highlight" class="css-19haqo1 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <g filter="url(#whatsapp-color-24px_svg__a)">
+                                                <path fill="#fff"
+                                                    d="m1.832 21.893 1.432-5.216a10.03 10.03 0 0 1-1.347-5.035c0-5.553 4.529-10.068 10.091-10.068a10.1 10.1 0 0 1 7.138 2.952A10.07 10.07 0 0 1 22.1 11.65c-.002 5.554-4.53 10.068-10.092 10.068h-.004a10.1 10.1 0 0 1-4.822-1.225zm5.597-3.223.307.181a8.4 8.4 0 0 0 4.27 1.167h.002c4.624 0 8.386-3.754 8.388-8.369a8.36 8.36 0 0 0-2.454-5.92 8.4 8.4 0 0 0-5.93-2.454c-4.627 0-8.39 3.754-8.392 8.368a8.34 8.34 0 0 0 1.283 4.453l.2.317-.846 3.088z">
+                                                </path>
+                                            </g>
+                                            <path fill="url(#whatsapp-color-24px_svg__b)"
+                                                d="m2.182 21.54 1.382-5.036a9.7 9.7 0 0 1-1.3-4.859c0-5.36 4.372-9.72 9.742-9.72a9.76 9.76 0 0 1 6.89 2.85 9.72 9.72 0 0 1 2.852 6.877c0 5.36-4.373 9.72-9.742 9.72h-.004a9.76 9.76 0 0 1-4.656-1.183z">
+                                            </path>
+                                            <path fill="url(#whatsapp-color-24px_svg__c)"
+                                                d="m1.832 21.893 1.432-5.216a10.03 10.03 0 0 1-1.347-5.035c0-5.553 4.529-10.068 10.091-10.068a10.1 10.1 0 0 1 7.138 2.952A10.07 10.07 0 0 1 22.1 11.65c-.002 5.554-4.53 10.068-10.092 10.068h-.004a10.1 10.1 0 0 1-4.822-1.225zm5.597-3.223.307.181a8.4 8.4 0 0 0 4.27 1.167h.002c4.624 0 8.386-3.754 8.388-8.369a8.36 8.36 0 0 0-2.454-5.92 8.4 8.4 0 0 0-5.93-2.454c-4.627 0-8.39 3.754-8.392 8.368a8.34 8.34 0 0 0 1.283 4.453l.2.317-.846 3.088z">
+                                            </path>
+                                            <path fill="#fff" fill-rule="evenodd"
+                                                d="M9.487 7.434c-.19-.42-.387-.427-.568-.435-.145-.006-.315-.006-.483-.006a.93.93 0 0 0-.673.315c-.23.252-.882.86-.882 2.099 0 1.238.903 2.435 1.03 2.602.126.168 1.744 2.79 4.306 3.799 2.129.838 2.564.672 3.026.628.46-.044 1.491-.61 1.702-1.197s.21-1.09.145-1.196-.231-.168-.484-.294c-.252-.125-1.492-.735-1.723-.818-.231-.084-.4-.126-.567.126-.169.252-.651.818-.799.986-.147.168-.294.19-.546.063-.252-.126-1.065-.391-2.028-1.248-.75-.668-1.258-1.491-1.403-1.743s-.015-.387.111-.514c.113-.113.252-.294.378-.44.127-.147.168-.252.252-.42.085-.168.043-.315-.02-.441-.064-.126-.55-1.369-.774-1.866"
+                                                clip-rule="evenodd"></path>
+                                            <defs>
+                                                <linearGradient id="whatsapp-color-24px_svg__b" x1="11.965" x2="11.965"
+                                                    y1="21.541" y2="1.926" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#20B038"></stop>
+                                                    <stop offset="1" stop-color="#60D66A"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="whatsapp-color-24px_svg__c" x1="11.966" x2="11.966"
+                                                    y1="21.893" y2="1.574" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#F9F9F9"></stop>
+                                                    <stop offset="1" stop-color="#fff"></stop>
+                                                </linearGradient>
+                                                <filter id="whatsapp-color-24px_svg__a" width="22.268" height="22.318"
+                                                    x="0.832" y="1.574" color-interpolation-filters="sRGB"
+                                                    filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="1"></feOffset>
+                                                    <feGaussianBlur stdDeviation="0.5"></feGaussianBlur>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.32 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_119_15"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_119_15"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                        <h2 style="font-size: 14px; margin-top: 15px; font-weight: 600; ">WhatsApp</h2>
+                                        <p style="font-size: 14px;">Integrate with WahtsApp <br> and stay connected with
+                                            <br> your customers.
+                                        </p>
+                                        <a href="#" style="text-decoration: none;">Integrate</a>
+                                    </div>
+                                    <div class="box1" style="background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="highlight" class="css-19haqo1 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <path fill="url(#instagram-color-24px_svg__a)" fill-rule="evenodd"
+                                                d="M21.475 5.45c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123s-.012 3.056-.06 4.123c-.049 1.064-.218 1.791-.465 2.427a5.11 5.11 0 0 1-2.925 2.925c-.636.247-1.363.416-2.427.465-1.066.048-1.407.06-4.123.06s-3.056-.012-4.123-.06c-1.064-.049-1.791-.218-2.427-.465a4.9 4.9 0 0 1-1.771-1.154 4.9 4.9 0 0 1-1.154-1.77c-.247-.637-.416-1.364-.465-2.428C2.012 15.056 2 14.716 2 12s.012-3.056.06-4.123c.049-1.064.218-1.791.465-2.427a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.636-.247 1.363-.416 2.427-.465C8.944 2.012 9.284 2 12 2s3.057.012 4.123.06c1.064.049 1.791.218 2.427.465a4.9 4.9 0 0 1 1.771 1.153 4.9 4.9 0 0 1 1.154 1.772m-1.68 12.448c.137-.352.3-.882.345-1.857.048-1.055.058-1.37.058-4.041 0-2.67-.01-2.986-.058-4.04-.045-.976-.208-1.505-.345-1.858a3.1 3.1 0 0 0-.748-1.15 3.1 3.1 0 0 0-1.15-.748c-.352-.136-.881-.3-1.856-.344-1.055-.048-1.371-.058-4.041-.058s-2.986.01-4.04.058c-.976.045-1.505.207-1.858.344-.434.16-.827.416-1.15.748a3.1 3.1 0 0 0-.748 1.15c-.137.353-.3.882-.344 1.857-.048 1.055-.058 1.37-.058 4.041 0 2.67.01 2.987.058 4.041.044.975.207 1.505.344 1.857.16.434.416.827.748 1.15a3.1 3.1 0 0 0 1.15.748c.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058 2.67 0 2.987-.01 4.04-.058.976-.044 1.505-.207 1.858-.344a3.31 3.31 0 0 0 1.898-1.898"
+                                                clip-rule="evenodd"></path>
+                                            <path fill="url(#instagram-color-24px_svg__b)" fill-rule="evenodd"
+                                                d="M6.865 12a5.135 5.135 0 1 1 10.27 0 5.135 5.135 0 0 1-10.27 0m1.802 0a3.333 3.333 0 1 0 6.667 0 3.333 3.333 0 0 0-6.667 0"
+                                                clip-rule="evenodd"></path>
+                                            <path fill="url(#instagram-color-24px_svg__c)"
+                                                d="M18.539 6.662a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0"></path>
+                                            <mask id="instagram-color-24px_svg__e" width="20" height="20" x="2" y="2"
+                                                maskUnits="userSpaceOnUse" style="mask-type: alpha;">
+                                                <path fill="url(#instagram-color-24px_svg__d)" fill-rule="evenodd"
+                                                    d="M21.475 5.45c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123s-.012 3.056-.06 4.123c-.049 1.064-.218 1.791-.465 2.427a5.11 5.11 0 0 1-2.925 2.925c-.636.247-1.363.416-2.427.465-1.066.048-1.407.06-4.123.06s-3.056-.012-4.123-.06c-1.064-.049-1.791-.218-2.427-.465a4.9 4.9 0 0 1-1.771-1.154 4.9 4.9 0 0 1-1.154-1.77c-.247-.637-.416-1.364-.465-2.428C2.012 15.056 2 14.716 2 12s.012-3.056.06-4.123c.049-1.064.218-1.791.465-2.427a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.636-.247 1.363-.416 2.427-.465C8.944 2.012 9.284 2 12 2s3.057.012 4.123.06c1.064.049 1.791.218 2.427.465a4.9 4.9 0 0 1 1.771 1.153 4.9 4.9 0 0 1 1.154 1.772m-1.68 12.448c.137-.352.3-.882.345-1.857.048-1.055.058-1.37.058-4.041 0-2.67-.01-2.986-.058-4.04-.045-.976-.208-1.505-.345-1.858a3.1 3.1 0 0 0-.748-1.15 3.1 3.1 0 0 0-1.15-.748c-.352-.136-.881-.3-1.856-.344-1.055-.048-1.371-.058-4.041-.058s-2.986.01-4.04.058c-.976.045-1.505.207-1.858.344-.434.16-.827.416-1.15.748a3.1 3.1 0 0 0-.748 1.15c-.137.353-.3.882-.344 1.857-.048 1.055-.058 1.37-.058 4.041 0 2.67.01 2.987.058 4.041.044.975.207 1.505.344 1.857.16.434.416.827.748 1.15a3.1 3.1 0 0 0 1.15.748c.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058 2.67 0 2.987-.01 4.04-.058.976-.044 1.505-.207 1.858-.344a3.31 3.31 0 0 0 1.898-1.898M6.866 12a5.135 5.135 0 1 1 10.27 0 5.135 5.135 0 0 1-10.27 0m1.802 0a3.333 3.333 0 1 0 6.667 0 3.333 3.333 0 0 0-6.667 0m8.672-4.138a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4"
+                                                    clip-rule="evenodd"></path>
+                                            </mask>
+                                            <g mask="url(#instagram-color-24px_svg__e)">
+                                                <path fill="url(#instagram-color-24px_svg__f)"
+                                                    d="M12.003 2c-4.175 0-5.396.004-5.633.024-.857.071-1.39.206-1.97.495-.448.223-.801.48-1.15.842q-.95.989-1.158 2.433c-.068.467-.087.563-.091 2.952-.002.796 0 1.844 0 3.25 0 4.173.004 5.393.024 5.63.07.834.2 1.358.477 1.932a4.21 4.21 0 0 0 2.73 2.231c.413.106.868.165 1.452.192.248.011 2.772.019 5.298.019s5.051-.003 5.293-.015c.677-.032 1.07-.085 1.504-.197a4.19 4.19 0 0 0 2.73-2.236c.272-.56.41-1.105.472-1.895.013-.172.019-2.92.019-5.664s-.006-5.486-.02-5.658c-.063-.804-.2-1.344-.48-1.914a4 4 0 0 0-.857-1.174q-.99-.947-2.434-1.155c-.468-.068-.56-.088-2.951-.092z">
+                                                </path>
+                                                <path fill="url(#instagram-color-24px_svg__g)"
+                                                    d="M12.003 2c-4.175 0-5.396.004-5.633.024-.857.071-1.39.206-1.97.495-.448.223-.801.48-1.15.842q-.95.989-1.158 2.433c-.068.467-.087.563-.091 2.952-.002.796 0 1.844 0 3.25 0 4.173.004 5.393.024 5.63.07.834.2 1.358.477 1.932a4.21 4.21 0 0 0 2.73 2.231c.413.106.868.165 1.452.192.248.011 2.772.019 5.298.019s5.051-.003 5.293-.015c.677-.032 1.07-.085 1.504-.197a4.19 4.19 0 0 0 2.73-2.236c.272-.56.41-1.105.472-1.895.013-.172.019-2.92.019-5.664s-.006-5.486-.02-5.658c-.063-.804-.2-1.344-.48-1.914a4 4 0 0 0-.857-1.174q-.99-.947-2.434-1.155c-.468-.068-.56-.088-2.951-.092z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <linearGradient id="instagram-color-24px_svg__a" x1="12" x2="28.643"
+                                                    y1="28.643" y2="12" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFD600"></stop>
+                                                    <stop offset="0.5" stop-color="#FF0100"></stop>
+                                                    <stop offset="1" stop-color="#D800B9"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="instagram-color-24px_svg__b" x1="12" x2="19.262"
+                                                    y1="19.262" y2="12" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FF6400"></stop>
+                                                    <stop offset="0.5" stop-color="#FF0100"></stop>
+                                                    <stop offset="1" stop-color="#FD0056"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="instagram-color-24px_svg__c" x1="17.339" x2="19.036"
+                                                    y1="8.359" y2="6.662" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#F30072"></stop>
+                                                    <stop offset="1" stop-color="#E50097"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="instagram-color-24px_svg__d" x1="17.339" x2="19.036"
+                                                    y1="8.359" y2="6.662" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#F30072"></stop>
+                                                    <stop offset="1" stop-color="#E50097"></stop>
+                                                </linearGradient>
+                                                <radialGradient id="instagram-color-24px_svg__f" cx="0" cy="0" r="1"
+                                                    gradientTransform="matrix(0 -19.8215 18.4355 0 7.313 23.54)"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FD5"></stop>
+                                                    <stop offset="0.1" stop-color="#FD5"></stop>
+                                                    <stop offset="0.5" stop-color="#FF543E"></stop>
+                                                    <stop offset="1" stop-color="#C837AB"></stop>
+                                                </radialGradient>
+                                                <radialGradient id="instagram-color-24px_svg__g" cx="0" cy="0" r="1"
+                                                    gradientTransform="matrix(1.73908 8.68793 -35.81207 7.16857 -1.35 3.44)"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#3771C8"></stop>
+                                                    <stop offset="0.128" stop-color="#3771C8"></stop>
+                                                    <stop offset="1" stop-color="#60F" stop-opacity="0"></stop>
+                                                </radialGradient>
+                                            </defs>
+                                        </svg>
+                                        <h2 style="font-size: 14px; margin-top: 15px; font-weight: 600; ">Instagram</h2>
+                                        <p style="font-size: 14px;">Kepp in touch with your instagram customers.</p>
+                                        <a href="#"
+                                            style="position: relative;top: 21px;text-decoration: none;">Integrate</a>
+                                    </div>
+                                    <div class="box1" style="background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="highlight" class="css-19haqo1 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <mask id="messenger-color-24px_svg__a" width="18" height="18" x="3" y="3"
+                                                maskUnits="userSpaceOnUse" style="mask-type: alpha;">
+                                                <path fill="#647491" fill-rule="evenodd"
+                                                    d="M12 3c-5.04 0-9 3.679-9 8.703 0 2.602 1.08 4.845 2.79 6.46.18.09.27.36.27.539l.09 1.615c0 .538.54.807.99.628l1.8-.808c.09-.09.27-.09.45-.09.81.27 1.71.36 2.61.36 5.04 0 9-3.68 9-8.704S17.04 3 12 3"
+                                                    clip-rule="evenodd"></path>
+                                            </mask>
+                                            <g mask="url(#messenger-color-24px_svg__a)">
+                                                <path fill="url(#messenger-color-24px_svg__b)" d="M21 3H3v18h18z">
+                                                </path>
+                                            </g>
+                                            <path fill="#fff" fill-rule="evenodd"
+                                                d="m6.6 14.216 2.61-4.217c.45-.628 1.35-.808 1.98-.359l2.07 1.615c.18.18.45.18.63 0l2.88-2.153c.36-.27.9.18.63.538l-2.61 4.217c-.45.628-1.35.808-1.98.359L10.74 12.6a.436.436 0 0 0-.63 0l-2.88 2.153c-.36.36-.9-.09-.63-.538"
+                                                clip-rule="evenodd"></path>
+                                            <defs>
+                                                <radialGradient id="messenger-color-24px_svg__b" cx="0" cy="0" r="1"
+                                                    gradientTransform="matrix(22.2704 0 0 22.0979 3.143 20.05)"
+                                                    gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#09F"></stop>
+                                                    <stop offset="0.61" stop-color="#A033FF"></stop>
+                                                    <stop offset="0.93" stop-color="#FF5280"></stop>
+                                                    <stop offset="1" stop-color="#FF7061"></stop>
+                                                </radialGradient>
+                                            </defs>
+                                        </svg>
+                                        <h2 style="font-size: 14px; margin-top: 15px; font-weight: 600; ">Facebook
+                                            Messenger</h2>
+                                        <p style="font-size: 14px;">Do it now and start responding to queries from
+                                            messsenger. </p>
+                                        <a href="#" style="text-decoration: none;">Integrate</a>
+                                    </div>
+                                </div>
+                                <div class="boxes"
+                                    style="position: relative; top: 16rem; left: 5.5rem; display: flex; justify-content: start; align-items: center;">
+                                    <div class="box1" style="background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="informative" class="css-l6cd9n e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="#56AAFF"
+                                                d="M12 3.7c-5.5 0-10 3.6-10 8 0 1.6.6 3.1 1.6 4.3 0 0 .2.2.2.3l-.1-.1c.1.2.2.4.2.6 0 .1-.9 3-.9 3-.1.2.1.5.4.5h.4l2.6-1.1.5-.2c.2-.1.4-.1.6-.1s.4 0 .5.1h.1c1.2.4 2.5.5 3.9.5 5.5 0 10-3.3 10-7.8 0-4.4-4.5-8-10-8">
+                                            </path>
+                                        </svg>
+                                        <h2 style="font-size: 14px; margin-top: 15px; font-weight: 600; ">WhatsApp</h2>
+                                        <p style="font-size: 14px;">Integrate with WahtsApp <br> and stay connected with
+                                            <br> your customers.
+                                        </p>
+                                        <a href="#" style="text-decoration: none;">Integrate</a>
+                                    </div>
+                                    <div class="box1" style="background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="highlight" class="css-19haqo1 e11k6mr30"
+                                            style="min-width: 24px; min-height: 24px;">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path
+                                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z">
+                                            </path>
+                                        </svg>
+                                        <h2 style="font-size: 14px; margin-top: 15px; font-weight: 600; ">Instagram</h2>
+                                        <p style="font-size: 14px;">Kepp in touch with your instagram customers.</p>
+                                        <a href="#"
+                                            style="position: relative; top: 21px; text-decoration: none;">Integrate</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- main section end -->
+    <script src="tidio.js"></script>
+
+</body>
+
+</html>

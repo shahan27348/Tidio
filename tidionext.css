@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&family=Noto+Sans+JP:wght@400;500&family=Noto+Sans+KR:wght@500&family=Open+Sans:wght@400;500&display=swap");
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("path/to/Euclid-Circular-B.woff2") format("woff2"),
+    /* Modern Browsers */ url("path/to/Euclid-Circular-B.woff") format("woff"); /* Legacy Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Euclicircularb ", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow: hidden;
+}
+
+/* Header section start */
+.header .main-head {
+  background-color: #dce9ff;
+  max-height: 53px;
+}
+.header .main-head .paragraph {
+  padding-left: 14.3rem;
+  padding-top: 0.4rem;
+}
+.header .main-head .paragraph #para1 {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
+.header .main-head .paragraph #talk {
+  color: #000;
+}
+.header .main-head .paragraph #talk:hover {
+  color: #336a9e;
+}
+.header .main-head .button {
+  background-color: #426eff;
+  margin-right: 12.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  max-height: 33px;
+}
+.header .main-head .button:hover {
+  background-color: #274abd;
+}
+.header .main-head .button .install {
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px 15px 7px 15px;
+  font-weight: lighter;
+}
+/* banner section start */
+
+.banner .color {
+  background-color: #1c2b45;
+  max-width: 55px;
+}
+
+.banner .icons-7 .icon-list {
+  list-style: none;
+  margin-left: -1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.banner .icons-7 .icon-list .icon-link {
+  padding-top: 24px;
+}
+.banner .icon-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+.banner .icon-3 .icon-list {
+  list-style: none;
+  margin-left: -1.7rem;
+}
+.banner .icon-3 .icon-list .icon-link {
+  padding-top: 24.9px;
+}
+.my-open {
+  padding-top: 0.9rem;
+  padding-left: 1.6em;
+  box-shadow: rgba(0, 27, 71, 0.08) 0px 3px 8px;
+  margin: 0;
+  height: 683px;
+}
+.new-col {
+  padding: 0;
+  width: 320px;
+}
+.h1 {
+  font-size: 19px;
+  margin-left: 2rem;
+  margin-top: -1.5rem;
+  letter-spacing: 0.6px;
+  font-weight: 550;
+}
+.p {
+  font-size: 14px;
+  color: #6b6b6b;
+  letter-spacing: 0.1px;
+  text-align: center;
+  margin-top: 5rem;
+  margin-right: 1rem;
+}
+.bann {
+  margin: 0;
+  padding: 0;
+}
+.main-head-banner {
+  box-shadow: 0 2px 2px rgba(0, 0, 500, 0.08);
+  margin: 0;
+  padding: 0;
+}
+.img {
+  position: relative;
+  right: -27.5rem;
+}
+.instal {
+  border: 2px solid #ec8823;
+  color: rgb(251, 180, 49);
+  position: relative;
+  right: -26.5rem;
+  width: 87px;
+  height: 33px;
+  max-height: 35px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.instal:hover {
+  background-color: rgb(207, 135, 0);
+  color: #fff;
+}
+.text {
+  position: relative;
+  right: -39rem;
+  top: 0.4rem;
+  width: 500px;
+}
+.text h5 {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.hero {
+  background-color: #eff2f6;
+  height: 640px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.hero h1 {
+  position: relative;
+  top: 5rem;
+  left: 5.5rem;
+  font-size: 32px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+}
+.hero h5 {
+  position: relative;
+  top: 7rem;
+  left: 5.5rem;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.hero .button .instal {
+  position: relative;
+  top: 9rem;
+  left: 5.5rem;
+  padding-bottom: 30px;
+  font-size: 15px;
+  padding-top: 10px;
+  background-color: #426eff;
+  border: none;
+  letter-spacing: 0.8px;
+  border-radius: 5px;
+  height: 40px;
+  color: #fff;
+  width: 230px;
+}
+.box1 {
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid #d8d8d8;
+  width: 220px;
+  height: 210px;
+  margin-bottom: 20px;
+}
+.box1:hover {
+  border: 2px solid #3966ff;
+}
+.open-button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: -1.7px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 305px;
+  height: 628px;
+  padding: 10px;
+  background-color: #1c2b45;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+.dropdown {
+  color: #8796af;
+  list-style: none;
+  font-size: 14px;
+  width: 80px;
+  height: 30px;
+  padding: 5px;
+  position: relative;
+  top: 0.6rem;
+}
+.dropdown:hover {
+  border: 1px solid #8796af;
+  border-radius: 3px;
+}
+.drop .dropdown {
+  color: #fff;
+  background-color: #2a3b5a;
+  list-style: none;
+  font-size: 14px;
+  width: 200px;
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+  top: 0.6rem;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: transparent;
+  color: #8796af;
+  font-size: 25px;
+  font-weight: lighter;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  bottom: 2.5rem;
+  left: 7.5rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+
+}
+.link a{
+  text-decoration: none;
+  color: #b1bcd0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  margin-right: 1.5rem;
+}
+.link a:hover{
+  text-decoration: underline;
+}
